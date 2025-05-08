@@ -1,0 +1,50 @@
+[
+  {
+    "page_content": "The image depicts a comprehensive diagram illustrating an organization's structure, with various departments connected to its core entity.\n\n**Core Entity:**\n* Airport Duty Manager (ADM)\n\n**Departments Connected to ADM:**\n\n• Airfield\n• HKO (Hong Kong Observatory)\n• Cargo \n• Customer Feedback & Social Media \n• Terminals \n• Sea and Land Transport\n• IT Systems \n• Aviation Security\n• Baggage Handling System\n• APM Incidents\n\nThese departments are interconnected with the Airport Duty Manager, indicating that they work together to manage airport operations effectively.",
+    "metadata": {
+      "type": "image",
+      "source_manual": "IAC Manual v9",
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.2 About the Integrated Airport Centre",
+      "Section": "2.2.4",
+      "image_path": "backend/data/extracted/IAC/images/c83a589b05f53b50601034125598f1125b16e4aea8f8670a5d2e467944171f00.jpg",
+      "added_time": "2025-05-07 11:24"
+    }
+  },
+  {
+    "page_content": "The provided table outlines various incident categories that require immediate attention from Air Traffic Management (ATM) and Incident Action Center (IAC) functions.\n\n**Incident Categories**\n\n*   **Airport Emergencies**\n    *   Aircraft accident\n    *   Full emergency declared by aircraft operator or pilot-in-command\n    *   Ground incidents, such as runway incursions or obstruction removal\n*   **Weather-Related Incidents**\n    *   Typhoon at Hong Kong International Airport (HKG)\n    *   Red airport lightning warnings\n    *   Low visibility operations due to fog or other weather conditions\n*   **System Outages**\n    *   Power dip affecting air conditioning, water supply, and communication systems in terminals and aprons\n\nThese incidents necessitate prompt attention from ATM and IAC functions to ensure safety and minimize disruptions.",
+    "metadata": {
+      "type": "image",
+      "source_manual": "IAC Manual v9",
+      "Header1": "Part 3 Incident & Emergency Handling and Reporting",
+      "Header2": "3.2 Reportable Items",
+      "Section": "3.2.1",
+      "image_path": "backend/data/extracted/IAC/images/b959557482ac2afea1d3fc7a1719d37e6f12072084873ac10264c28d8a5b4a40.jpg",
+      "added_time": "2025-05-07 11:24"
+    }
+  },
+  {
+    "page_content": "The image provided is a table outlining various incidents or emergencies that require immediate attention from the Air Traffic Management (ATM) function, including but not limited to:\n\n*   **Runway Incidents**: These include runway incursions, runway obstructions, and other hazards affecting aircraft movement on runways.\n*   **Taxiway Incidents**: This includes taxiing incidents such as collisions between vehicles or obstacles obstructing the taxiway.\n*   **Apron/Stand Incidents**: Any incident occurring at an apron or stand where aircraft are parked for maintenance or passenger boarding, including fuel spills and cargo mishandling.\n*   **Airfield Incidents**: These include airfield fires, bird strikes, and other hazards affecting aircraft operations on the airfield itself.\n\nThese incidents require prompt attention to ensure safety and minimize disruptions in airport operations.",
+    "metadata": {
+      "type": "image",
+      "source_manual": "IAC Manual v9",
+      "Header1": "Part 3 Incident & Emergency Handling and Reporting",
+      "Header2": "3.2 Reportable Items",
+      "Section": "3.2.1",
+      "image_path": "backend/data/extracted/IAC/images/6c3be068c9ca6460b2e1f09a1d45c75b0b782e622fcebc10d42b77a8bfdd8be8.jpg",
+      "added_time": "2025-05-07 11:24"
+    }
+  },
+  {
+    "page_content": "The image shows a table with two columns and four rows, each containing bullet points. The first column is labeled \"3.2.1 Immediate attention of the ADM must be drawn to the following incidents or emergencies by the respective IAC functions,\" while the second column contains images that appear to represent different types of incidents or emergencies.\n\nHere are the main points from the image:\n\n*   **Unattended bags**\n    *   Unattended bags require closure of terminals.\n    *   Suspicious items reported by AVSECO\n    *   Passenger disputes\n    *   Vehicles on fire on landside\n    *   Return of persons/crews involved in overseas accidents/in-flight incidents\n    *   Major incidents involving airlines operating in HKIA\n*   **Other emergencies**\n    *   Strikes of home-based airlines or business partners\n    *   Turbulence incidents\n    *   Dead birds (H5N1 positive) /dolphins found\n    *   Protest by general public or airport staff\n\nIn summary, the image outlines various types of incidents that require immediate attention from the Airport Management and their respective Incident Action Committee functions. These include unattended bags, passenger disputes, vehicle fires on landside, return of persons/crews involved in overseas accidents/in-flight incidents, major incidents involving airlines operating at HKIA, strikes by home-based airlines or business partners, turbulence incidents, dead birds (H5N1 positive) /dolphins found, and protests by the general public or airport staff.",
+    "metadata": {
+      "type": "image",
+      "source_manual": "IAC Manual v9",
+      "Header1": "Part 3 Incident & Emergency Handling and Reporting",
+      "Header2": "3.2 Reportable Items",
+      "Section": "3.2.1",
+      "image_path": "backend/data/extracted/IAC/images/b8d26d85285b59f6751a96c3f916ee6eb4f4466d074aec69cad31cdae1445d2c.jpg",
+      "added_time": "2025-05-07 11:24"
+    }
+  }
+]

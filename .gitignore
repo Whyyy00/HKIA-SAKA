@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+
+# IDE相关
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 图片文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+*.tif
+*.tiff
+*.webp
+
+# PDF文件
+*.pdf
+
+# Word文件
+*.doc
+*.docx
+*.odt
+
+# Markdown文件
+*.md
+*.markdown
+
+# 日志和临时文件
+*.log
+.cache/
+logs/
+tmp/
+temp/

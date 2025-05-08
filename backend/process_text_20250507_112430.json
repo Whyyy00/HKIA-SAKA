@@ -1,0 +1,122 @@
+[
+  {
+    "page_content": "# Part 1 Preface  \n## 1.1 About this Manual  \n1.1.1 This Integrated Airport Centre (IAC) Manual aims to enable designated personnel working in IAC and those reporting to the Airport Duty Manager (ADM) to understand their roles and responsibilities by describing the IAC key functions, procedures and action checklists, so that they can perform their duties and responsibilities as required by the ADM and their respective companies or departments.",
+    "metadata": {
+      "Header1": "Part 1 Preface",
+      "Header2": "1.1 About this Manual",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 1.2 Manual Issuance and Distribution  \n1.2.1 This Manual is an Airport Authority Hong Kong (AAHK) document, issued by the ADM and authorized for use by the Executive Director, Airport Operations.  \n1.2.2 An electronic copy of the IAC Manual is issued to each the following parties:  \nChief Operating Officer, AAHK\nExecutive Director, Airport Operations, AAHK\nExecutive Director, Engineering & Technology, AAHK\nDeputy Director, Airport Operations, AAHK\nChief Information Officer, AAHK\nGeneral Manager, Airfield, AAHK\nDeputy General Manager, Airfield, AAHK\nGeneral Manager, APM & Baggage, AAHK\nGeneral Manager, Terminal Operations, AAHK\nGeneral Manager, Landside, AAHK\nGeneral Manager, Safety, Security & Business Continuity, AAHK\nGeneral Manager, Technical Services Infrastructure, AAHK\nGeneral Manager, Technical Services Systems, AAHK\nGeneral Manager, Corporate Affairs, AAHK\nGeneral Manager, Aviation Logistics, AAHK\nAirport Duty Manager, AAHK\nAssistant General Manager, APM Operations, AAHK\nAssistant General Manager, Airfield, AAHK\nAssistant General Manager, Terminal Operation & Government\nFacilitation, AAHK\nAssistant General Manager, Landside Services, AAHK\nAssistant General Manager, Baggage Operations, AAHK  \nSenior Manager, IT Operations, AAHK Airfield Duty Manager, AAHK Assistant Manager, Airfield (IAC-AD), AAHK Terminals & Landside Duty Manager, AAHK Assistant Manager, Terminal Operations, AAHK Assistant Manager, Landside Services, AAHK Duty Manager, Baggage Operations, AAHK Manager, Customer Communications, AAHK Duty Manager, Fault Response Team, AAHK Assistant Manager, System Operations, AAHK Assistant Executive Director (Ops I), Aviation Security Company Limited (AVSECO) Duty Security Manager, AVSECO Head of Hub Operation, Cathay Pacific (CPA) Hong Kong Observatory (HKO) Assistant Manager, Ramp Operations, Hong Kong Airlines (CRK) Deputy General Manager, Hong Kong Express Airways (HKE) Operations Controller, Pan Asia Pacific Aviation Services (PAPAS) Senior Ramp Services Manager, SATS HK Dragonair Airport GSE Service (DAS) Ramp Services Manager, Hong Kong Airport Services (HAS) Head of Section (Ramp Equipment), Hong Kong Aircraft Engineering Company (HAECO)  Senior Manager, Ramp Services, Jardine Air Terminal Services (JATS) Ramp Service Manager, China Aircraft Services Limited (CASL)",
+    "metadata": {
+      "Header1": "Part 1 Preface",
+      "Header2": "1.2 Manual Issuance and Distribution",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 1.3 Amendments & Updates  \n1.3.1 The distribution of the IAC Manual is controlled by the ADM of the Airport Management Division (AMD), AAHK. Amendments and updates of this manual will be issued and notified on need basis.  \n1.3.2 All requests shall be raised to the ADM (AIRPORTDM@hkairport.com) containing the following information:  \na. Name, job title and contact phone number of the person(s) raising the requests.\nb. The existing text, procedures or information to be amended.\nc. The proposed text, procedures or information.\nd. The effective date for the proposed amendment to take place.\ne. Justification for the proposed amendment.",
+    "metadata": {
+      "Header1": "Part 1 Preface",
+      "Header2": "1.3 Amendments & Updates",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 1.4 Reference Documents  \n1.4.1 The procedures, checklists, requirements and information stipulated in this manual are of a high-level approach. Users of this manual shall crossreference the following documents issued by the AAHK as appropriate:  \na. Emergency Procedures Manual\nb. Business Continuity Manual\nc. Airport Operations Manual – Airfield Operations\nd. Terminal & Landside Procedure Manual\ne. ABD Procedure Manual\nf. HKIA Airport Security Programme\ng. Safety Management System Manual / Quality & Health Management Plan",
+    "metadata": {
+      "Header1": "Part 1 Preface",
+      "Header2": "1.4 Reference Documents",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 1.5 Manual Disclaimer  \n1.5.1 This manual is the property of the AAHK and is intended as a reference for designated personnel with operations at IAC only.  \n1.5.2 No part of this controlled copy may be reproduced or transmitted in any form or by any means whatsoever for any purpose without the written permission of the ADM.  \n1.5.3 The AAHK accepts no liability for any damage, indirect or direct (including loss of profits or consequential loss) which may be sustained by any individual, property or organization as a result of activities carried out in association with the contents of this manual.  \n1.5.4 The AAHK cannot be held responsible for any inaccurate or superseded information contained in this manual.",
+    "metadata": {
+      "Header1": "Part 1 Preface",
+      "Header2": "1.5 Manual Disclaimer",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "# Part 2 Introduction to the Integrated Airport Centre  \n## 2.1 Vision and Missions  \n2.1.1 Vision Statement To be a Real-Time Operations Integrator enabling optimum efficiency of Airport Flow  \n2.1.2 Mission Statement  \nReinforce the health of airport flows at HKIA by:  \nUpholding the high standards of airport management KPIs\nPre-empting incidents from developing and/or escalating to crisis\nsituations\nFacilitating business continuity during crisis situations\nInitiating continuous process improvements\nIntegrating airport services\nFunctioning as training ground for future airport leaders",
+    "metadata": {
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.1 Vision and Missions",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 2.2 About the Integrated Airport Centre  \n2.2.1 The IAC is located inside the Airport Restricted Area near Gate House 1.  \n2.2.2 The IAC is to amalgamate real-time airport operations through the colocation and integration of major airport functions, namely;  \nairfield operations\nT1, T1 Satellite Concourse (T1S)  & T1 Midfield Concourse (T1M)\noperations,\nSkyPier and landside transport operations\nAPM & baggage handling\naviation security\nairport infrastructure and systems maintenance and supports\nairport IT systems maintenance and supports\ncustomer feedback & social media\ncargo operations  \n2.2.3 Led by the Airport Duty Manager (ADM) on 24-hours basis, the IAC serves to monitor the real-time airport operations and management, and to provide expeditious and coordinated response to incidents so that the impact on airport operations is mitigated and any potential disruption is averted.  \n2.2.4 Through the video wall displays of CCTV & system status images, and the alarm annunciation platform at the IAC, staff of each major airport functions share the latest information and status of airport conditions such as weather, airport emergencies, APM incidents, fire alarms and etc.  \n  \nHB carriers = Home-based carriers RHO = Ramp handling operators LMO = Line maintenance operators",
+    "metadata": {
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.2 About the Integrated Airport Centre",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 2.4 Roles of Airport Duty Manager  \n2.4.1 The ADM acts with delegated authority of CEO and Airport Management Director to make decisions on behalf of the Authority on a real time and crisis management basis. He/She is the senior AAHK staff to monitor the real-time airport operations and management, and to handle real-time crisis  \nsituations. In the absence of more senior staff, i.e. at weekends and outside office hours, the ADM will make real-time operational decisions on behalf of the AAHK.  \n2.4.2  Directly supervises staff working at IAC in each shift. Leads, coordinates and monitors all different functional teams to ensure efficient, safe and smooth airport operations.  \n2.4.3 Proactively manages airport operations to facilitate the safe and efficient flow of passenger, cargo, baggage and air traffic movements and information, and to maintain good public profile.  \n2.4.4 Identifies real time operation issues, coordinate responses from all stakeholders, redeploys resources to contain disruptions and restore normal operations.  \n2.4.5 Manages airport operation crisis and incidents according to laid-down procedures, authorizes the activation of contingency plan, ensure the impact of incidents is mitigated and timely resumption of normal operations.  \n2.4.6 Daily monitoring of airport performance standards by random audit checks. Actively participate in day-to-day operations and provide comments and suggestions to stakeholders and AA line department.",
+    "metadata": {
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.4 Roles of Airport Duty Manager",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 2.5 Tasks and responsibilities of each function Support and facilitates HKSAR Government in all kinds of events with HKIA involvement  \n2.5.1 Airfield operations  \na) Stand Allocation and Apron Control i.e. IAC-Airfield (AD), AAHK:  \nAircraft stand allocation\nCoordination of apron activities with ATC, airlines and\naircraft ground services franchisees\nLogging of aircraft movement\nSurveillance of airfield activities\nAlerting and coordinating aircraft emergency actions\nAirside passenger bus dispatch and control  \nb) Flight Schedule Management i.e. IAC-AD, AAHK:  \nFlight schedule management and update Real-time flight data processing  \nc) Services and Standard Monitoring i.e. IAC-AD (Standards and Service Delivery (S&SD), AAHK:  \nReal-time performance monitoring and service shortfall rectification of ramp franchisees or licensees.\nConduct investigation in complaint cases on ramp franchisees or licensees\nEquipment pooling monitoring  \nd) Airlines & Ramp Operators  \nIn order to enhance the coordination amongst AA, airlines and ramp operators so as to uphold the efficiency and service standards of HKIA, representatives of the home-base carriers, RHO and LMO are stationed at the IAC, either part-time or on 24 hours basis\n Conduct daily briefing to Business Partners  \n2.5.2 T1, T1S and T1M operations, i.e. IAC-Terminal Operations (TOD), AAHK a) Overall monitoring and control of T1, T1S and T1M operations:  \nCentralized monitoring and co-ordination of all activities in Terminal 1, T1S and T1M\nAssures integrity and serviceability of all essential components running Terminal 1, T1S and T1M\nReacts and makes adjustment of the operating mode to cope with real time situation\nTo alert, make emergency liaison and co-ordination with Government Departments, airlines and business partners etc. when abnormal situation arises  \n2.5.3  SkyPier & landside operations, i.e. IAC- Landside (LD), AAHK a) Overall monitoring and control of Ground Transportation Centre, landside road networks:  \nCentralized monitoring and co-ordination of all activities in Ground Transportation Centre, landside road networks and SkyPier\nAssures integrity and serviceability of all essential components running Ground Transportation Centre, landside road networks and SkyPier\nReacts and makes adjustment of the operating mode to cope with real time situation\nTo alert, make emergency liaison and co-ordination with Government Departments, airlines and business partners etc. when abnormal situation arises  \nb) Berth allocation and control of berthing activities at SkyPie  \n2.5.4 APM & Baggage, i.e. IAC-APM & Baggage (ABD), AAHK a) Real time management of Baggage Handling System:  \nRelates and alerts fault message to the concerned parties for follow up actions Balances and re-diverts baggage flow to maintain the operating flow of the system Distributes essential operation information to the communities Activates contingency procedure during system failure or handling of ad hoc community needs  \nb) Real time management of Sortation Allocation Control System:  \nAllocation of flight laterals as per the daily flight schedule Locates and offloads EBS baggage as per RHO request Pre-assigns, adjusts and modify flight lateral allocation to meet the daily dynamic changes Controls, arranges and monitors Early bag storage (EBS) status c) Reclaim Belt Allocation System (RBAS)  \nAllocation of reclaim belt as per daily flight schedule Monitoring and control of reclaim belt allocation in response to realtime situation Overall monitoring of arrival baggage unloading activity and liaise with related parties to maintain smooth real-time operation Monitoring and maintain of ABMS record in precise condition  \nd) Real time management of APM (currently handled by IAC – Terminal Operations)  \ne) Real time management of Autonomous Electric Tractor (AET) for the delivery route between T1 and SkyPier Baggage Hall  \nMonitoring and control of Remote Monitoring Unit (RMU) in response to alarms generated from RMU under real-time situation Through cameras installed on the AET to monitor container and dolly delivery status\nReacts and makes adjustment of the AET deployment to cope with real time operations  \n2.5.5 Airport Infrastructure and Systems, i.e. IAC-Technical Services Infrastructure (TSI), AAHK a) Provides technical support to the IAC for real time management of airport operation b) Performs remote system control and monitoring as per request from Airport Duty Manager and his authorized delegates  \nc) Coordinates with Fault Response Team (FRT) for handling fault cases\nand incidents\nd) Liaison between the IAC and Fault Response Team Management\nOffice (FRTMO)  \n2.5.6 Airport IT, i.e. IAC-Information Technology (ITD)  \na) Servers and network real-time monitoring\nb) Data backup and restoration\nc) System administration\nd) Communications rooms management\ne) PTW and SCRS execution and control\nf) Fault reporting, handling, escalation and rectification\ng) Problem resolution\nh) Preventative and corrective management\ni) Execution of contingency procedures  \n2.5.7. Customer Feedback & Social Media i.e. IAC-Customer Communications, Corporate Affairs a) Responsible for responding to request for help, information requests and public enquiries b) Responsible for in-terminal and ad-hoc announcements through the Public Address (PA) system and tracing social media platform  \n2.5.8 Airport Security, i.e. IAC-AVSECO  \na) Centralized monitoring and co-ordination of all aviation security related activities of the Hong Kong International Airport\nb) Assures security integrity of the Airport Restricted Area by monitoring all access control points, CCTV, the ACS system, PIDS system and etc c) Reacts and responses to any possible activities that may be in violation of the Airport Security Programme such as intrusion\nd) To alert, make emergency liaison and co-ordinate with Government Departments, airlines business partners and etc. when security incidents occur  \n2.5.9. HB Carriers and Ramp Operators a) In order to enhance the coordination amongst AA, HB carriers and ramp operators so as to uphold the efficiency and service standards of HKIA, representatives of the home-base carriers, ramp handling operators (RHO) and line maintenance operators (LMO) are station at the IAC, either part-time or on 24 hours basis.  \n2.5.10 Hong Kong Observatory (HKO)  \na) In order to enhance the coordination between AA and HKO so as to uphold the efficiency and service standards of HKIA, HKO representatives are station at the IAC on regular basis.  \n2.5.11 Airport Emergency Centre (AEC)  \na) Airport Emergency Centre is a command, control and communication centre with the following off-accident scene functions when in activation:  \nCrisis management at HKIA (e.g. aircraft related incident, accident) Business continuity incident management  (e.g. system failure)",
+    "metadata": {
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.5 Tasks and responsibilities of each function Support and facilitates HKSAR Government in all kinds of events with HKIA involvement",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 2.6 Functional description, special systems and equipment of each work bench of IAC layout  \n  \n  \n\\*Non-special systems and equipment such as OA, telephone console, printer and fax machines are excluded;\n\\*Actual allocation subject to operational need  \nFacilities & equipment of IAC benches  \n  \nAll in one fax / printeAll in one fax / printer  \n  \nRHO/LMO/AIRLINES  \n\nPage2  \n  \n  \nLayout of Primary IAC – Main Hall  \n  \n  \nLayout of Primary IAC – G/F  \n  \nLayout of Primary IAC – 1/F  \n",
+    "metadata": {
+      "Header1": "Part 2 Introduction to the Integrated Airport Centre",
+      "Header2": "2.6 Functional description, special systems and equipment of each work bench of IAC layout",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "# Part 3 Incident & Emergency Handling and Reporting  \n  \n# Part 3 Incident & Emergency Handling and Reporting  \n## 3.1 General  \n3.1.1 The IAC serves to monitor the real-time airport operations and management, and to provide expeditious and coordinated response to incident so that the impact on airport operations is mitigated and any potential disruption is averted.",
+    "metadata": {
+      "Header1": "Part 3 Incident & Emergency Handling and Reporting",
+      "Header2": "3.1 General",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  },
+  {
+    "page_content": "## 3.2 Reportable Items  \n3.2.1 Immediate attention of the ADM must be drawn to the following incidents or emergencies by the respective IAC functions, including but not limited to:  \n  \n  \n",
+    "metadata": {
+      "Header1": "Part 3 Incident & Emergency Handling and Reporting",
+      "Header2": "3.2 Reportable Items",
+      "source_manual": "IAC Manual v9",
+      "added_time": "2025-05-07 11:24",
+      "type": "text"
+    }
+  }
+]
