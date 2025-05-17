@@ -62,3 +62,6 @@ env/
 logs/
 tmp/
 temp/
+
+# scripts文件夹
+/backend/scripts
