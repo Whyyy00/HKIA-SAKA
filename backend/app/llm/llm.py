@@ -8,7 +8,7 @@ from typing import Literal
 
 def get_Ollama_model(
         task: Literal["summarize_image", "chat"],
-        num_ctx=32768, # Sets the size of the context window used to generate the next token. (Default: 2048)
+        num_ctx=65536, # Sets the size of the context window used to generate the next token. (Default: 2048)
         num_predict=-1, # Maximum number of tokens to predict when generating text. (Default: 128, -1 = infinite generation, -2 = fill context)
         temperature=0.5, # The temperature of the model. Increasing the temperature will make the model answer more creatively. (Default: 0.8)
         top_k=40, # Reduces the probability of generating nonsense. A higher value (e.g. 100) will give more diverse answers, while a lower value (e.g. 10) will be more conservative. (Default: 40)

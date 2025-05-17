@@ -14,8 +14,31 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
     llm = get_Ollama_model(task='chat')
     retriever = get_ensemble_retriever(6, 5, 4, 0.4, 0.3, 0.3)
 
+    # rewrite the query
+    def rewrite_query(query: str) -> str:
+        rewrite_template = """You are an expert assistant in airport operations. Your task is to understand the user's true intent and rewrite their query to improve retrieval quality.
+        Original query: {query}
+        Please analyze the user's potential underlying intent and rewrite the query to make it more specific and detailed, so that it better matches the content in the airport operations manual.
+        Return the rewritten query without other explanation.
+        Rewritten query:"""
+
+        rewrite_prompt = ChatPromptTemplate.from_template(rewrite_template)
+
+        rewrite_chain = (
+            {"query": lambda x: x}
+            | rewrite_prompt
+            | llm
+            | StrOutputParser()
+        )
+
+        rewritten_query = rewrite_chain.invoke(query)
+
+        return rewritten_query
+
+    rewritten_query = rewrite_query(query)
+    
     # retrieve top 2 docs
-    retrieved_docs = retriever.invoke(query)
+    retrieved_docs = retriever.invoke(rewritten_query)
     top_docs = retrieved_docs[:4]
 
     def format_docs(docs: List[Document]) -> str:
@@ -52,21 +75,26 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
     )
 
     # Answer
-    stream_iter = rag_chain.stream(query)
+    stream_iter = rag_chain.stream(rewritten_query)
 
-    # Image path list
-    img_path_ls  = [doc.metadata['image_path'] for doc in top_docs if doc.metadata['type'] == 'image']
+    # # Image path list
+    # img_path_ls  = [doc.metadata['image_path'] for doc in top_docs if doc.metadata['type'] == 'image']
 
     print(f"Query: {query}")
+    print("="*60)
+    print(f"Rewritten query: {rewritten_query}")
+    print("="*60)
     print(f"Top docs: {top_docs}")
+    print("="*60)
     print(f"Context: {formatted_context}")
-
-    return stream_iter, img_path_ls
+    print("="*60)
+    
+    return stream_iter, top_docs
 
 if __name__ == "__main__":
     question = "How to handle bomb threat?"
     answer, img_ls = rag_query(question)
-    print(f"Question: {question}")
+    
     buffer = ""
 
     for chunk in answer:
