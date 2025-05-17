@@ -12,14 +12,14 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
 
     # initialize llm and retriever
     llm = get_Ollama_model(task='chat')
-    retriever = get_ensemble_retriever(3, 3, 0.6, 0.5)
+    retriever = get_ensemble_retriever(6, 5, 4, 0.4, 0.3, 0.3)
 
     # retrieve top 2 docs
     retrieved_docs = retriever.invoke(query)
     top_docs = retrieved_docs[:4]
 
     def format_docs(docs: List[Document]) -> str:
-        formatted_context = "\n\n".join([f"The {i+1}th snippet: \n{doc.metadata['source_manual'].strip()} - {doc.metadata['Header1'].strip()} \
+        formatted_context = "\n\n".join([f"\n{doc.metadata['source_manual'].strip()} - {doc.metadata['Header1'].strip()} \
                                         - {doc.metadata['Header2'].strip()}\n{doc.page_content}" \
                                         for i, doc in enumerate(docs)])
         return formatted_context
@@ -31,9 +31,10 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
     # contruct rag chain
     template = '''You are SAKA, a professional AI assistant specialized in providing precise, 
     step-by-step guidance based on airport manuals. Your primary users are frontline airport staff 
-    who need clear and concise instructions to perform their tasks efficiently.
+    who need clear and concise instructions to perform their tasks efficiently. Please find most relevant
+    contents in provided manual infos to answer the question.
     
-    Relevant manual snippets:
+    Relevant manual contents:
     {context}
 
     User's qustion: {question}
@@ -56,10 +57,14 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
     # Image path list
     img_path_ls  = [doc.metadata['image_path'] for doc in top_docs if doc.metadata['type'] == 'image']
 
+    print(f"Query: {query}")
+    print(f"Top docs: {top_docs}")
+    print(f"Context: {formatted_context}")
+
     return stream_iter, img_path_ls
 
 if __name__ == "__main__":
-    question = "What should be done if there is fire in Fire in Passenger Terminal Building?"
+    question = "How to handle bomb threat?"
     answer, img_ls = rag_query(question)
     print(f"Question: {question}")
     buffer = ""

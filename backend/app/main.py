@@ -3,11 +3,19 @@ sys.path.append('/Users/yuyangyang/Documents/Studying/CUHK/9_IS_Practicum/hkia_s
 from fastapi import FastAPI, Request
 import uvicorn
 from fastapi.responses import StreamingResponse
+from fastapi.middleware.cors import CORSMiddleware
 from backend.app.llm.rag_query import rag_query
 import json
 import time
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/rag-chat")
 async def rag_chat(request: Request):
