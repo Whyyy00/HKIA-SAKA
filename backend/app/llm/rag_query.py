@@ -2,6 +2,7 @@ import sys
 sys.path.append('/Users/yuyangyang/Documents/Studying/CUHK/9_IS_Practicum/hkia_saka_v2')
 from backend.app.retriever.retriever import get_ensemble_retriever
 from backend.app.llm.llm import get_Ollama_model
+from backend.app.database.log_query import get_query_logger
 from langchain_core.documents import Document
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
@@ -41,9 +42,13 @@ def rag_query(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> 
     retrieved_docs = retriever.invoke(rewritten_query)
     top_docs = retrieved_docs[:4]
 
+    logger = get_query_logger()
+    logger.log_documents(top_docs)
+
+    # format the docs
     def format_docs(docs: List[Document]) -> str:
         formatted_context = "\n\n".join([f"\n{doc.metadata['source_manual'].strip()} - {doc.metadata['Header1'].strip()} \
-                                        - {doc.metadata['Header2'].strip()}\n{doc.page_content}" \
+                                        - {doc.metadata.get('Header2', '').strip()}\n{doc.page_content}" \
                                         for i, doc in enumerate(docs)])
         return formatted_context
     
@@ -99,20 +104,19 @@ def rag_query(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> 
     # # Image path list
     # img_path_ls  = [doc.metadata['image_path'] for doc in top_docs if doc.metadata['type'] == 'image']
 
+    #################### 调试 ####################
     print(f"Query: {query}")
     print("="*60)
     print(f"Rewritten query: {rewritten_query}")
     print("="*60)
     print(f"Top docs: {top_docs}")
     print("="*60)
-    print(f"Context: {formatted_context}")
-    print("="*60)
     
     return stream_iter, top_docs
 
 if __name__ == "__main__":
-    question = "How to handle bomb threat?"
-    answer, img_ls = rag_query(question, 'Straightforward')
+    question = "What is ADM?"
+    answer, top_docs = rag_query(question, 'Straightforward')
     
     buffer = ""
 
@@ -124,5 +128,3 @@ if __name__ == "__main__":
 
     if buffer:
         print(buffer, end="", flush=True)
-
-    print("\n", img_ls)
