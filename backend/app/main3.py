@@ -36,13 +36,13 @@ def main_app():
 
     with st.sidebar:
         st.header("⚙️ Configuration")
-        selected_model = st.selectbox(
-            "Choose Model",
-            ["deepseek-r1:1.5b", "deepseek-r1:3b"],
+        selected_mode = st.radio(
+            "Choose Mode",
+            ["Straightforward", "Comprehensive"],
             index=0
         )
         st.divider()
-        st.markdown("### SAKA Capabilities")
+        st.markdown("### Guidance")
         st.markdown("""
             - Provide step-by-step advice based on airport manuals
             - Answer questions about airport operations
@@ -59,7 +59,7 @@ def main_app():
     if "message_log" not in st.session_state:
         st.session_state.message_log = [{
             "role": "assistant", 
-            "content": "Hi! I'm SAKA. How can I help you with airport operations today?",
+            "content": "Hi! I'm SAKA. How can I help you today?",
             "references": [],
             "image_paths": []
         }]
@@ -120,7 +120,7 @@ def main_app():
             # Process response
             try:
                 # Get streaming response and document list
-                streamer, top_docs = rag_query(prompt)
+                streamer, top_docs = rag_query(prompt, selected_mode)
 
                 # Stream output text
                 for new_text in streamer:

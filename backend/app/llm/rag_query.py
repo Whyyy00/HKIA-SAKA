@@ -6,9 +6,9 @@ from langchain_core.documents import Document
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
-from typing import List, Tuple
+from typing import List, Tuple, Literal
 
-def rag_query(query: str) -> Tuple[str, List[str]]:
+def rag_query(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> Tuple[str, List[str]]:
 
     # initialize llm and retriever
     llm = get_Ollama_model(task='chat')
@@ -52,18 +52,37 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
     # print(formatted_context)
 
     # contruct rag chain
-    template = '''You are SAKA, a professional AI assistant specialized in providing precise, 
-    step-by-step guidance based on airport manuals. Your primary users are frontline airport staff 
-    who need clear and concise instructions to perform their tasks efficiently. Please find most relevant
-    contents in provided manual infos to answer the question.
-    
-    Relevant manual contents:
-    {context}
+    if mode == 'Straightforward':
+        template = '''You are SAKA, a professional AI assistant specialized in providing precise, 
+        step-by-step guidance based on airport manuals. Your primary users are frontline airport staff 
+        who need clear and concise instructions to perform their tasks efficiently. So find most relevant
+        contents in provided manual infos to answer the question and in ordered list style.
+        Just provide your answer directly without "Here is.... / Based on the provided contents...".
+        
+        Relevant manual contents:
+        {context}
 
-    User's qustion: {question}
+        User's qustion: {question}
 
-    Answer:"""
-    '''
+        Answer:"""
+        '''
+    else:
+        template = '''You are SAKA, an AI assistant providing in-depth analysis and strategic recommendations based on airport manuals.
+        Your primary users are airport management personnel who require well-reasoned insights to make informed decisions.
+        **Response Style:**  
+        - Provide a structured response, including analysis, potential challenges, and recommendations.  
+        - Use professional terminology where appropriate.  
+        - Support responses with relevant references from the manuals.  
+        - Where applicable, highlight best practices and industry standards. 
+        - Do not start with "based on th provided manuals", just provide your answer.
+
+        Relevant manual contents:
+        {context}
+
+        User's qustion: {question}
+
+        Answer:"""
+        '''
 
     prompt = ChatPromptTemplate.from_template(template)
 
@@ -93,7 +112,7 @@ def rag_query(query: str) -> Tuple[str, List[str]]:
 
 if __name__ == "__main__":
     question = "How to handle bomb threat?"
-    answer, img_ls = rag_query(question)
+    answer, img_ls = rag_query(question, 'Straightforward')
     
     buffer = ""
 
