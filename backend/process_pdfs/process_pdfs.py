@@ -7,6 +7,8 @@ from typing import List, Tuple
 from langchain_core.documents import Document
 import re
 import os
+import json
+from datetime import datetime
 
 def remove_img_link(content: str) -> str:
     """After extract image content, remove the image links in markdown content to get better embeddings.
@@ -19,9 +21,6 @@ def remove_img_link(content: str) -> str:
     """
     result = re.sub(r"!\[\]\((.*)\)", "", content)
     return result
-
-import json
-from datetime import datetime
 
 def save_documents_to_json(documents, file_path):
     """Save docs into json

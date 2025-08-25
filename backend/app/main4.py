@@ -1,7 +1,7 @@
 import sys
 sys.path.append('/Users/yuyangyang/Documents/Studying/CUHK/9_IS_Practicum/hkia_saka_v2')
 import streamlit as st
-from backend.app.llm.rag_query import rag_query
+from backend.app.llm.rag_query import rag_query_stream
 import pandas as pd
 import sqlite3
 from datetime import datetime, timedelta
@@ -306,7 +306,7 @@ def chat_page():
             # Process response
             try:
                 # Get streaming response and document list
-                streamer, top_docs = rag_query(prompt, selected_mode)
+                streamer, top_docs = rag_query_stream(prompt, selected_mode)
 
                 # Stream output text
                 for new_text in streamer:

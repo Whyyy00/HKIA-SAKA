@@ -15,12 +15,12 @@ local_md_dir = "data/extracted/EPM/markdown"
 # local_middle_dir = "data/extracted/middle"
 image_dir = str(os.path.basename(local_image_dir))  # "images"
 
-# 确保所有目录都存在
+# Make sure dir exist
 os.makedirs(local_image_dir, exist_ok=True)
 os.makedirs(local_md_dir, exist_ok=True)
 # os.makedirs(local_middle_dir, exist_ok=True)
 
-# 创建不同目录的writer对象
+# create writer
 image_writer = FileBasedDataWriter(local_image_dir)
 md_writer = FileBasedDataWriter(local_md_dir)
 # middle_writer = FileBasedDataWriter(local_middle_dir)

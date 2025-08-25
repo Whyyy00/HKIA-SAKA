@@ -6,19 +6,19 @@ from langchain_core.documents import Document
 
 
 class QueryLogger:
-    """记录RAG查询文档信息的数据库管理类"""
+    """Database management class for recording RAG query document information"""
     
     def __init__(self, db_path="backend/data/logs/query_logs.db"):
-        """初始化数据库连接和创建必要的表结构"""
-        # 确保数据库目录存在
+        """Initialize database connection and create necessary table structures"""
+        # Ensure database directory exists
         os.makedirs(os.path.dirname(db_path), exist_ok=True)
         
-        # 连接数据库
+        # Connect to database
         self.db_path = db_path
         self.conn = sqlite3.connect(db_path)
         self.cursor = self.conn.cursor()
         
-        # 创建文档日志表(如果不存在)
+        # Create document logs table (if not exists)
         self.cursor.execute('''
         CREATE TABLE IF NOT EXISTS doc_logs (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -33,17 +33,17 @@ class QueryLogger:
         self.conn.commit()
     
     def log_documents(self, docs: List[Document]) -> None:
-        """将文档信息记录到数据库中"""
+        """Record document information to the database"""
         timestamp = datetime.now().isoformat()
         
         for doc in docs:
-            # 提取文档元数据
+            # Extract document metadata
             source_manual = doc.metadata.get('source_manual', '')
             header1 = doc.metadata.get('Header1', '')
             header2 = doc.metadata.get('Header2', '')
             doc_type = doc.metadata.get('type', 'text')
             
-            # 插入数据库
+            # Insert into database
             self.cursor.execute(
                 "INSERT INTO doc_logs (timestamp, source_manual, Header1, Header2, type) VALUES (?, ?, ?, ?, ?)",
                 (timestamp, source_manual, header1, header2, doc_type)
@@ -52,7 +52,7 @@ class QueryLogger:
         self.conn.commit()
     
     def get_document_stats(self, days=7):
-        """获取最近几天最常被检索的文档来源"""
+        """Get most frequently retrieved document sources from recent days"""
         cutoff_date = (datetime.now() - datetime.timedelta(days=days)).isoformat()
         
         self.cursor.execute(
@@ -67,17 +67,17 @@ class QueryLogger:
         return self.cursor.fetchall()
     
     def close(self):
-        """关闭数据库连接"""
+        """Close database connection"""
         if self.conn:
             self.conn.close()
             self.conn = None
 
 
-# 单例模式，确保全局只有一个数据库连接实例
+# Singleton pattern, ensuring only one database connection instance globally
 _logger_instance = None
 
 def get_query_logger():
-    """获取QueryLogger单例实例"""
+    """Get QueryLogger singleton instance"""
     global _logger_instance
     if _logger_instance is None:
         _logger_instance = QueryLogger()

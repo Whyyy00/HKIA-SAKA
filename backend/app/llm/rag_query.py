@@ -9,11 +9,11 @@ from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 from typing import List, Tuple, Literal
 
-def rag_query(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> Tuple[str, List[str]]:
+def rag_query_stream(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> Tuple[str, List[Document]]:
 
     # initialize llm and retriever
     llm = get_Ollama_model(task='chat')
-    retriever = get_ensemble_retriever(6, 5, 4, 0.4, 0.3, 0.3)
+    retriever = get_ensemble_retriever(6, 5, 6, 0.35, 0.3, 0.35)
 
     # rewrite the query
     def rewrite_query(query: str) -> str:
@@ -115,8 +115,8 @@ def rag_query(query: str, mode: Literal['Straightforward', 'Comprehensive']) -> 
     return stream_iter, top_docs
 
 if __name__ == "__main__":
-    question = "What is ADM?"
-    answer, top_docs = rag_query(question, 'Straightforward')
+    question = "What are the key steps that should be taken in response to a chemical spill involving hazardous materials?"
+    answer, top_docs = rag_query_stream(question, 'Straightforward')
     
     buffer = ""
 

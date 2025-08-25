@@ -6,6 +6,7 @@ from langchain.retrievers import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
 import json
+from backend.evaluation.generate_eval_questions import get_all_docs
 
 def get_ensemble_retriever(k_text: int, k_img: int, k_bm25: int, weight_text: float, weight_img: float, weight_bm25: float) -> EnsembleRetriever:
 
@@ -23,14 +24,15 @@ def get_ensemble_retriever(k_text: int, k_img: int, k_bm25: int, weight_text: fl
             persist_directory="backend/data/chroma_langchain_db"
         )
 
-    with open('/Users/yuyangyang/Documents/Studying/CUHK/9_IS_Practicum/hkia_saka_v2/backend/process_image_20250507_120228.json', 'r', encoding='utf-8') as f:
-        img_content = json.load(f)
+    # initialize the retriever
+    retriever_text = text_vector_store.as_retriever(search_kwargs={"k": 67})
+    retriever_image = image_vector_store.as_retriever(search_kwargs={"k": 59})
+
+    # get all docs in the vbector sotre
+    text_docs = retriever_text.invoke(" ")
+    img_docs = retriever_image.invoke(" ")
     
-    with open('/Users/yuyangyang/Documents/Studying/CUHK/9_IS_Practicum/hkia_saka_v2/backend/process_text_20250507_120228.json', 'r', encoding='utf-8') as f:
-        text_content = json.load(f)
-    
-    bm25_ls = text_content + img_content
-    docs = [Document(page_content=item["page_content"], metadata=item["metadata"]) for item in bm25_ls]
+    docs = text_docs + img_docs
 
     retriever_bm25 = BM25Retriever.from_documents(docs)
     retriever_bm25.k = k_bm25
