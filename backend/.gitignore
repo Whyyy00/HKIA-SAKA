@@ -19,7 +19,7 @@ tmp/
 temp/
 
 # scripts文件夹
-/backend/scripts/
+scripts/
 
 # data
 *.json
