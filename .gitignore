@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.env
+
+# IDE相关
+.idea/
+.vscode/
+**/.DS_Store
+
+# 日志和临时文件
+*.log
+.cache/
+logs/
+tmp/
+temp/
+
+# scripts文件夹
+scripts/
+
+# data
+*.json
+*.csv
+*.png
+data/
